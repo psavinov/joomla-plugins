@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="user" method="upgrade">
+	<name>plg_user_fiwareuser</name>
+	<author>Pavel Savinov</author>
+	<creationDate>October 2017</creationDate>
+	<copyright>(C) 2005 - 2017 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>me@pavelsavinov.info</authorEmail>
+	<authorUrl>www.pavelsavinov.info</authorUrl>
+	<version>3.0.0</version>
+	<description>PLG_FIWARE_USER_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="fiwareuser">fiwareuser.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="endpoint"
+					type="text"
+					label="idm_endpoint"
+					description="idm_endpoint_desc"
+					size="20"
+				/>
+				<field
+					name="admin"
+					type="text"
+					label="idm_admin"
+					description="idm_admin_desc"
+					size="20"
+				/>
+				<field
+					name="password"
+					type="password"
+					label="idm_password"
+					description="idm_password_desc"
+					size="20"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
